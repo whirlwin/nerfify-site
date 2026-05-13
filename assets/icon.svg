@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A3A3A"/>
+      <stop offset="0.5" stop-color="#1A1A1A"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="108" height="108" rx="24" fill="url(#bg)"/>
+  <!-- Toddler head -->
+  <circle cx="46" cy="60" r="18" fill="#FFFFFF"/>
+  <!-- Sleeping eyes -->
+  <path d="M 35,57 Q 38,54 41,57" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 51,57 Q 54,54 57,57" stroke="#000000" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Mouth -->
+  <circle cx="46" cy="69" r="1.5" fill="#000000"/>
+  <!-- Headphones band -->
+  <path d="M 28,60 A 18,18 0 0,1 64,60" stroke="#1DB954" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <!-- Earcups -->
+  <circle cx="28" cy="60" r="4" fill="#1DB954"/>
+  <circle cx="64" cy="60" r="4" fill="#1DB954"/>
+  <!-- Zzz -->
+  <polyline points="76,22 82,22 76,28 82,28" stroke="#1DB954" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polyline points="70,32 80,32 70,40 80,40" stroke="#1DB954" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polyline points="60,42 74,42 60,52 74,52" stroke="#1DB954" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

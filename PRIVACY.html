@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Privacy Policy — Nerfify</title>
+  <meta name="description" content="Nerfify privacy policy. Nothing leaves your device." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Geist+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <img src="assets/icon.svg" alt="" />
+    <span class="dot" aria-hidden="true"></span>
+    <span class="name">Nerfify · privacy</span>
+  </header>
+
+  <main class="doc">
+    <p class="eyebrow">Policy</p>
+    <h1>Nothing <em>leaves</em><br />your device.</h1>
+    <p class="updated">Last updated · 2026-05-03</p>
+
+    <p>
+      Nerfify is built around a simple promise: <strong>nothing leaves
+      your device.</strong>
+    </p>
+
+    <h2>Data we collect</h2>
+    <p>
+      <strong>None.</strong> Nerfify does not collect, store, transmit,
+      or sell any personal or device data.
+    </p>
+    <p>
+      There are no analytics, no crash reporters, no advertising IDs, no
+      user accounts, and no telemetry. There is no Nerfify server —
+      there is nothing for your device to talk to.
+    </p>
+
+    <h2>How the VPN permission is used</h2>
+    <p>
+      Android requires apps that intercept network traffic to use the
+      system VPN service (<code>BIND_VPN_SERVICE</code>). Nerfify uses
+      this permission <strong>only</strong> to run a local DNS filter on
+      your own device. Specifically:
+    </p>
+    <ul>
+      <li>Nerfify acts as the DNS resolver for your device while it is running.</li>
+      <li>
+        For most domains, it forwards your queries to a public resolver
+        (Cloudflare's <code>1.1.1.1</code> and Google's
+        <code>8.8.8.8</code>) exactly as your phone would normally.
+      </li>
+      <li>
+        For a small list of Spotify video-CDN domains, it returns "no
+        such address," which causes the Spotify app to fall back to
+        audio-only playback.
+      </li>
+      <li>
+        DNS queries are processed on your device. Nerfify does not log
+        them, store them, or send them anywhere other than the public
+        resolver they would have gone to anyway.
+      </li>
+    </ul>
+    <p>
+      Nerfify does <strong>not</strong> route the rest of your traffic
+      through any server. It is not a privacy VPN, a proxy, or a tunnel
+      to a third party. It is a local filter that happens to use
+      Android's VPN plumbing.
+    </p>
+
+    <h2>Permissions Nerfify requests</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BIND_VPN_SERVICE</td>
+          <td>Required by Android to run the local DNS filter described above.</td>
+        </tr>
+        <tr>
+          <td>INTERNET</td>
+          <td>Forward non-blocked DNS queries to public resolvers.</td>
+        </tr>
+        <tr>
+          <td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE</td>
+          <td>Keep the filter running while you listen to Spotify.</td>
+        </tr>
+        <tr>
+          <td>POST_NOTIFICATIONS</td>
+          <td>Show the persistent "Music-only mode is on" notification while the filter is active.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Children</h2>
+    <p>
+      Nerfify is not directed at children and does not knowingly process
+      any data from anyone. Since no data is collected, there is nothing
+      children-specific to disclose.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy ever changes, the new version will be published at
+      the same URL with an updated date at the top.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions: open an issue at
+      <a href="https://codeberg.org/whirlwin/nerfify/issues">codeberg.org/whirlwin/nerfify/issues</a>.
+    </p>
+
+    <a class="back" href="index.html">← Back to nerfify</a>
+  </main>
+
+  <footer class="site">
+    <span class="sig">© Nerfify · made by <a href="https://codeberg.org/whirlwin">whirlwin</a></span>
+    <span class="links">
+      <a href="index.html">Home</a>
+      <a href="https://codeberg.org/whirlwin/nerfify">Source</a>
+      <a href="https://codeberg.org/whirlwin/nerfify/issues">Issues</a>
+    </span>
+  </footer>
+</body>
+</html>
