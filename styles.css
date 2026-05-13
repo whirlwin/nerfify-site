@@ -242,6 +242,20 @@ h1.display em {
 .btn:hover .arrow {
   transform: translateX(3px);
 }
+.btn-disabled {
+  background: transparent;
+  color: var(--ink-dim);
+  border: 1px solid var(--rule);
+  cursor: default;
+}
+.btn-disabled:hover {
+  background: transparent;
+  color: var(--ink-dim);
+  transform: none;
+}
+.btn-disabled .arrow {
+  color: var(--accent);
+}
 .cta-note {
   font-family: var(--mono);
   font-size: 0.74rem;

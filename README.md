@@ -1,9 +1,9 @@
 # nerfify-site
 
-Marketing site for [Nerfify](https://codeberg.org/whirlwin/nerfify),
-served by [Codeberg Pages][cbpages] at <https://nerfify.whirlwin.io>.
+Marketing site for Nerfify, served by [Codeberg Pages][cbpages] at
+<https://nerfify.whirlwin.io>.
 
-The Android app lives in a separate private repo. This repo is public
+The Android app lives in a separate, private repo. This repo is public
 so Codeberg Pages can serve it.
 
 ## Files
