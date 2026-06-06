@@ -97,6 +97,14 @@ header.site .name {
   text-transform: uppercase;
   color: var(--ink-dim);
 }
+header.site .lang {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
 header.site .dot {
   width: 5px;
   height: 5px;
@@ -261,6 +269,49 @@ h1.display em {
   font-size: 0.74rem;
   color: var(--ink-faint);
   letter-spacing: 0.05em;
+}
+
+/* Early-tester signup */
+.signup {
+  margin-top: 2.75rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.signup-label {
+  display: block;
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 24;
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.signup-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.signup-input {
+  flex: 1 1 16rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.85rem 1.25rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 180ms ease;
+}
+.signup-input:focus { border-color: var(--accent); }
+.signup-input::placeholder { color: var(--ink-faint); }
+.signup .btn { border: 0; }
+.signup .btn:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.signup-note {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  margin: 1rem 0 0;
 }
 
 /* ---------- SECTIONS ---------- */

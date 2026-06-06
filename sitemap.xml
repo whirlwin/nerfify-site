@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nerfify.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nerfify.com/" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://nerfify.com/no/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nerfify.com/" />
+  </url>
+  <url>
+    <loc>https://nerfify.com/no/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nerfify.com/" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://nerfify.com/no/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nerfify.com/" />
+  </url>
+  <url>
+    <loc>https://nerfify.com/PRIVACY</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nerfify.com/PRIVACY" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://nerfify.com/no/personvern" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nerfify.com/PRIVACY" />
+  </url>
+  <url>
+    <loc>https://nerfify.com/no/personvern</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nerfify.com/PRIVACY" />
+    <xhtml:link rel="alternate" hreflang="nb" href="https://nerfify.com/no/personvern" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nerfify.com/PRIVACY" />
+  </url>
+</urlset>

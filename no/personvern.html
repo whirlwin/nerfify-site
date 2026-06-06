@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Personvernerklæring — Nerfify</title>
+  <meta name="description" content="Nerfifys personvernerklæring. Ingenting forlater enheten din." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://nerfify.com/no/personvern" />
+  <link rel="alternate" hreflang="en" href="https://nerfify.com/PRIVACY" />
+  <link rel="alternate" hreflang="nb" href="https://nerfify.com/no/personvern" />
+  <link rel="alternate" hreflang="x-default" href="https://nerfify.com/PRIVACY" />
+
+  <meta property="og:title" content="Personvernerklæring — Nerfify" />
+  <meta property="og:description" content="Nerfifys personvernerklæring. Ingenting forlater enheten din." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://nerfify.com/no/personvern" />
+  <meta property="og:site_name" content="Nerfify" />
+  <meta property="og:locale" content="nb_NO" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Geist+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site">
+    <img src="../assets/icon.svg" alt="" />
+    <span class="dot" aria-hidden="true"></span>
+    <span class="name">Nerfify · personvern</span>
+    <a class="lang" href="../PRIVACY.html" lang="en" hreflang="en">English</a>
+  </header>
+
+  <main class="doc">
+    <p class="eyebrow">Erklæring</p>
+    <h1>Ingenting <em>forlater</em><br />enheten din.</h1>
+    <p class="updated">Sist oppdatert · 2026-06-06</p>
+
+    <p>
+      Nerfify er bygget rundt et enkelt løfte: <strong>ingenting
+      forlater enheten din.</strong>
+    </p>
+    <p>
+      Dette er en oversettelse. Ved avvik gjelder
+      <a href="../PRIVACY.html">den engelske versjonen</a>.
+    </p>
+
+    <h2>Data vi samler inn</h2>
+    <p>
+      <strong>Ingen.</strong> Nerfify samler ikke inn, lagrer, sender
+      eller selger noen person- eller enhetsdata.
+    </p>
+    <p>
+      Det finnes ingen analyse, ingen krasjrapporter, ingen
+      annonse-ID-er, ingen brukerkontoer og ingen telemetri. Det finnes
+      ingen Nerfify-server — det er ingenting for enheten din å snakke
+      med.
+    </p>
+
+    <h2>Påmelding som tidlig tester (dette nettstedet)</h2>
+    <p>
+      Hvis du sender inn e-postadressen din via påmeldingsskjemaet på dette
+      nettstedet, lagrer vi adressen og valgt språk i en database vi driver
+      selv, og bruker den til nøyaktig ett formål: å kontakte deg om testing
+      av Nerfify. Den selges, deles eller brukes aldri til noe annet, og du
+      kan når som helst få den slettet ved å ta kontakt via lenken nederst.
+      Dette skjemaet er nettstedets eneste datainnsamling — selve appen
+      samler fortsatt ingenting.
+    </p>
+
+    <h2>Slik brukes VPN-tillatelsen</h2>
+    <p>
+      Android krever at apper som fanger opp nettverkstrafikk, bruker
+      systemets VPN-tjeneste (<code>BIND_VPN_SERVICE</code>). Nerfify
+      bruker denne tillatelsen <strong>kun</strong> til å kjøre et lokalt
+      DNS-filter på din egen enhet. Konkret:
+    </p>
+    <ul>
+      <li>Nerfify fungerer som DNS-resolver for enheten din mens den kjører.</li>
+      <li>
+        For de fleste domener videresendes spørringene dine til en
+        offentlig resolver (Cloudflares <code>1.1.1.1</code> og Googles
+        <code>8.8.8.8</code>), akkurat som telefonen ellers ville gjort.
+      </li>
+      <li>
+        For en kort liste med Spotifys video-CDN-domener svares det
+        «ingen slik adresse», som gjør at Spotify-appen faller tilbake
+        til avspilling med bare lyd.
+      </li>
+      <li>
+        DNS-spørringer behandles på enheten din. Nerfify logger dem
+        ikke, lagrer dem ikke og sender dem ikke noe annet sted enn til
+        den offentlige resolveren de uansett ville gått til.
+      </li>
+    </ul>
+    <p>
+      Nerfify ruter <strong>ikke</strong> resten av trafikken din
+      gjennom noen server. Den er ikke en personverns-VPN, en proxy
+      eller en tunnel til en tredjepart. Den er et lokalt filter som
+      tilfeldigvis bruker Androids VPN-mekanisme.
+    </p>
+
+    <h2>Tillatelser Nerfify ber om</h2>
+    <table>
+      <thead>
+        <tr><th>Tillatelse</th><th>Hvorfor</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BIND_VPN_SERVICE</td>
+          <td>Kreves av Android for å kjøre det lokale DNS-filteret beskrevet over.</td>
+        </tr>
+        <tr>
+          <td>INTERNET</td>
+          <td>Videresende ikke-blokkerte DNS-spørringer til offentlige resolvere.</td>
+        </tr>
+        <tr>
+          <td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE</td>
+          <td>Holde filteret i gang mens du lytter til Spotify.</td>
+        </tr>
+        <tr>
+          <td>POST_NOTIFICATIONS</td>
+          <td>Vise det vedvarende «Kun musikk-modus er på»-varselet mens filteret er aktivt.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Barn</h2>
+    <p>
+      Nerfify retter seg ikke mot barn og behandler ikke bevisst data
+      fra noen. Siden ingen data samles inn, er det ingenting
+      barnespesifikt å opplyse om.
+    </p>
+
+    <h2>Endringer</h2>
+    <p>
+      Hvis denne erklæringen noen gang endres, publiseres den nye
+      versjonen på samme adresse med oppdatert dato øverst.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Spørsmål? Opprett en sak på
+      <a href="https://codeberg.org/whirlwin/nerfify-site/issues">codeberg.org/whirlwin/nerfify-site/issues</a>.
+    </p>
+
+    <a class="back" href="index.html">← Tilbake til nerfify</a>
+  </main>
+
+  <footer class="site">
+    <span class="sig">© Nerfify · laget av <a href="https://codeberg.org/whirlwin">whirlwin</a></span>
+    <span class="links">
+      <a href="index.html">Hjem</a>
+      <a href="https://codeberg.org/whirlwin/nerfify-site/issues">Kontakt</a>
+    </span>
+  </footer>
+</body>
+</html>
