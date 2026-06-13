@@ -147,11 +147,13 @@ header.site .dot {
     max-width: 1000px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
+    align-items: start;
     gap: clamp(2rem, 5vw, 4.5rem);
   }
   .hero-phone {
     margin: 0;
+    /* drop the phone down so its top lines up with the heading, not the eyebrow above it */
+    margin-top: 3.4rem;
     width: clamp(240px, 24vw, 296px);
   }
 }
